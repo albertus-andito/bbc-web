@@ -17,7 +17,9 @@
     "axios": "^0.18.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-hot-loader": "^4.3.11"
+    "react-hot-loader": "^4.3.11",
+    "react-sortablejs": "^1.5.1",
+    "sortablejs": "^1.6.1"
   },
   "devDependencies": {
     "babel-loader": "^8.0.2",
