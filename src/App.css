@@ -38,8 +38,11 @@ h1 {
 }
 
 .button:hover {
+<<<<<<< HEAD
   opacity: 0.7;
   cursor: pointer;
+=======
+>>>>>>> 070ce93378428e928dd73a1f739f0790f7db3efa
 }
 
 .leftButton {
@@ -50,6 +53,7 @@ h1 {
   float: right;
 }
 
+<<<<<<< HEAD
 .centerButton {
   text-align: center;
   margin: auto;
@@ -59,6 +63,8 @@ h1 {
   text-align: center;
 }
 
+=======
+>>>>>>> 070ce93378428e928dd73a1f739f0790f7db3efa
 .buttonsContainer {
   margin: 2%;
 }
@@ -90,8 +96,11 @@ img {
 .liRank:hover {
   cursor: move;
 }
+<<<<<<< HEAD
 
 .afterSubmission {
   display: block;
   margin: auto;
 }
+=======
+>>>>>>> 070ce93378428e928dd73a1f739f0790f7db3efa
