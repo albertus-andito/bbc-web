@@ -8,11 +8,8 @@ class Rank extends Component{
   	super(props);
   	this.state = {
   	  ranks: Array.from(this.props.articles.keys()),
-<<<<<<< HEAD
       error: false,
       submitted: false
-=======
->>>>>>> 070ce93378428e928dd73a1f739f0790f7db3efa
   	};
   	this.handleSubmit = this.handleSubmit.bind(this);
 
@@ -26,14 +23,11 @@ class Rank extends Component{
       rank3: this.props.articles.get(this.state.ranks[2])
     })
     .then(response => {
-<<<<<<< HEAD
       this.setState({
         error: false,
         submitted: true
       });
       console.log(response);
-=======
->>>>>>> 070ce93378428e928dd73a1f739f0790f7db3efa
     })
     .catch(error => {
       this.setState({
@@ -48,10 +42,7 @@ class Rank extends Component{
   	const items = this.state.ranks.map(val => (<li className="liRank" key={uniqueId()} data-id={val}>{val}</li>));
     return(
       <div className="rank">
-<<<<<<< HEAD
         <p>Please rank the articles by dragging the titles</p>
-=======
->>>>>>> 070ce93378428e928dd73a1f739f0790f7db3efa
         <div>
           <form onSubmit={this.handleSubmit}>
             <Sortable
@@ -63,22 +54,18 @@ class Rank extends Component{
             >
               {items}
             </Sortable>
-<<<<<<< HEAD
             {this.state.submitted ? null : <input className="rightButton button" type="submit" value="Submit" />}
           </form>
         </div>
         <div className="afterSubmission">
           {this.state.error ? <h3>An error has occured. Check your internet connection</h3> : null}
           {this.state.submitted ? <SubmitSuccess goToBeginning={this.props.goToBeginning}/> : null}
-=======
->>>>>>> 070ce93378428e928dd73a1f739f0790f7db3efa
         </div>
       </div>
     )
   }
 }
 
-<<<<<<< HEAD
 class SubmitSuccess extends Component {
   render(){
     return(
@@ -90,6 +77,4 @@ class SubmitSuccess extends Component {
   }
 }
 
-=======
->>>>>>> 070ce93378428e928dd73a1f739f0790f7db3efa
 export default Rank;

@@ -19,10 +19,7 @@ class App extends Component{
     this.nextArticle = this.nextArticle.bind(this);
     this.prevArticle = this.prevArticle.bind(this);
     this.goToRank = this.goToRank.bind(this);
-<<<<<<< HEAD
     this.goToBeginning = this.goToBeginning.bind(this);
-=======
->>>>>>> 070ce93378428e928dd73a1f739f0790f7db3efa
     this.updateTitles = this.updateTitles.bind(this);
   }
 
@@ -47,7 +44,6 @@ class App extends Component{
   	})
   }
 
-<<<<<<< HEAD
   goToBeginning(){
   	this.setState({
   	  nums: this.randomNumber(5),
@@ -57,8 +53,6 @@ class App extends Component{
   	})
   }
 
-=======
->>>>>>> 070ce93378428e928dd73a1f739f0790f7db3efa
   //Store the titles and numbers of articles that are shown
   updateTitles(title, articleNo){
   	this.setState({
@@ -92,11 +86,8 @@ class App extends Component{
       <div className="app">
         <h1>ARTICLES RANKER</h1>
         <div className="body">
-<<<<<<< HEAD
           {this.state.showArticle ? <Article handler={this.updateTitles} articleNo={this.state.nums[this.state.i]} i={this.state.i}/> 
           						  : <Rank articles={this.state.articles} goToBeginning={this.goToBeginning}/>}
-=======
->>>>>>> 070ce93378428e928dd73a1f739f0790f7db3efa
           <div className="buttonsContainer">
             {leftButton}
             {rightButton}
