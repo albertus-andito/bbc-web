@@ -11,6 +11,7 @@
     "publish-demo": "npm run build && npm run deploy"
   },
   "author": "",
+  "homepage" : "http://albertus-andito.github.io/bbc-web",
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "^7.1.0",
