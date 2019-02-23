@@ -77,4 +77,4 @@ class SubmitSuccess extends Component {
   }
 }
 
-export default Rank;
+export {Rank, SubmitSuccess};

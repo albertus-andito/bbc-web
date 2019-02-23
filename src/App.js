@@ -3,7 +3,7 @@ import {hot} from "react-hot-loader";
 import axios from 'axios';
 import "./App.css";
 
-import Rank from "./Rank.js";
+import {Rank} from "./Rank.js";
 import {PrevButton, NextButton, RankButton} from "./Buttons.js";
 import {Article, ArticleComp} from "./Article.js";
 
