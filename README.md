@@ -2,7 +2,7 @@
 
 This website shows 3 articles (one at a time) and allows user to rank the articles at the end.
 
-This is created as a test for the BBC Web and Backend trainee.
+This is created as a test for the BBC Web and Backend trainee application.
 
 ## Getting Started
 
