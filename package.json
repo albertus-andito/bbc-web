@@ -10,7 +10,7 @@
     "deploy": "gh-pages -d /dist",
     "publish-demo": "npm run build && npm run deploy"
   },
-  "author": "",
+  "author": "albertus-andito",
   "homepage": "http://albertus-andito.github.io/bbc-web/",
   "license": "ISC",
   "dependencies": {
