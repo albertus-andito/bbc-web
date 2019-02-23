@@ -17,7 +17,7 @@ class Rank extends Component{
 
   //Submit the ranked articles numbers
   handleSubmit(event) {
-  	axios.post('https://my-json-server.typicode.com/albertus-andito/bbc-web/db', {
+  	axios.post('https://my-json-server.typicode.com/albertus-andito/bbc-web/articlesRank', {
       rank1: this.props.articles.get(this.state.ranks[0]),
       rank2: this.props.articles.get(this.state.ranks[1]),
       rank3: this.props.articles.get(this.state.ranks[2])
