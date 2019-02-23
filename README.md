@@ -24,10 +24,17 @@ To get a development env running:
 npm start
 ```
 
-### Further Improvements
+### Build
+
+To get a build production runs at https://albertus-andito.github.io/bbc-web/:
+
+```
+npm run publish-demo
+```
+
+## Further Improvements
 Several improvements that can be made to this website:
 1. Cache the articles that have been read so that the performance can be improved (there is no need to access the network).
 2. Pre-loading the subsequent articles, possibly by using React-Loadable or any other lazy loading methods, so that the performance can be imrpoved.
 3. Add routings to the website using React-Router, eventhough it is now acting as a Single Page Application.
-4. Manually add build configurations, using webpack, gulp, and such.
 

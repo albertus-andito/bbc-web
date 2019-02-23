@@ -15,22 +15,28 @@ class Article extends Component{
   //Get the article in form of json file
   componentDidUpdate(nextProps) {
   	if (this.props.articleNo != nextProps.articleNo) {
-	  axios.get('./data/article-'+this.props.articleNo+'.json')
-	    .then(res => {
-	      const body = res.data.body.map(obj => obj)
-	      this.setState({
-	    	  title: res.data.title,
-	    	  body: body
-	      });
-	      this.props.handler(res.data.title, this.props.articleNo);
-	      //console.log(body);
-	    })
-	    .catch(error => {
-        this.setState({
-          title: "A network error has occured. Check your internet connection",
-          body: []
-        })
-	      console.log(error);
+      let url;
+      if(!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+        url = './data/article-'+this.props.articleNo+'.json';
+      } else {
+        url = 'https://my-json-server.typicode.com/albertus-andito/bbc-web/'+(this.props.articleNo);
+      }
+	    axios.get(url)
+	      .then(res => {
+	        const body = res.data.body.map(obj => obj)
+	        this.setState({
+	    	    title: res.data.title,
+	    	    body: body
+	        });
+	        this.props.handler(res.data.title, this.props.articleNo);
+	        //console.log(body);
+	      })
+	      .catch(error => {
+          this.setState({
+            title: "A network error has occured. Check your internet connection",
+            body: []
+          })
+	        console.log(error);
 	    })
 	}
 	
