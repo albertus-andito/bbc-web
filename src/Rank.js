@@ -72,7 +72,7 @@ class Rank extends Component{
 class SubmitSuccess extends Component {
   render(){
     return(
-      <div class="centerDiv">
+      <div className="centerDiv">
         <h3>Your ranking has been submitted.</h3>
         <button type="button" className="button centerButton" onClick={this.props.goToBeginning}>Start again</button>
       </div>
