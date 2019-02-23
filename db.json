@@ -1,7 +1,5 @@
 {
-	"articlesRank": [],
-	"articles": [
-		{"1": {
+		"1": {
 		  "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
 		  "body": [
 		    {
@@ -48,8 +46,8 @@
 		      }
 		    }
 		  ]
-		}},
-		{"2": {
+		},
+		"2": {
 		  "title": "Praesent bibendum nec velit a fringilla. Nulla facilisi",
 		  "body": [
 		    {
@@ -110,8 +108,8 @@
 		      }
 		    }
 		  ]
-		}},
-		{"3": {
+		},
+		"3": {
 		  "title": "Vestibulum posuere orci ullamcorper nisi porta, sit amet tempus nibh porta",
 		  "body": [
 		    {
@@ -169,8 +167,8 @@
 		      }
 		    }
 		  ]
-		}},
-		{"4":{
+		},
+		"4":{
 		  "title": "Maecenas venenatis lorem ut erat dictum, sed varius est porta",
 		  "body": [
 		    {
@@ -220,8 +218,8 @@
 		      }
 		    }
 		  ]
-		}},
-		{"5":{
+		},
+		"5":{
 		  "title": "Nulla nibh erat, pharetra at ultricies nec, tincidunt luctus arcu",
 		  "body": [
 		    {
@@ -255,6 +253,6 @@
 		      }
 		    }
 		  ]
-		}}
-	]
+		}
+	
 }
