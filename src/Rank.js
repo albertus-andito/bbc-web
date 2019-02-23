@@ -17,10 +17,13 @@ class Rank extends Component{
 
   //Submit the ranked articles numbers
   handleSubmit(event) {
-  	axios.post('https://my-json-server.typicode.com/albertus-andito/bbc-web/db', {
-      rank1: this.props.articles.get(this.state.ranks[0]),
-      rank2: this.props.articles.get(this.state.ranks[1]),
-      rank3: this.props.articles.get(this.state.ranks[2])
+  	axios.post('https://app.fakejson.com/q', {
+      token: "cn3El_uf8JT2hAwXCAWqBw",
+      data: {
+        rank1: this.props.articles.get(this.state.ranks[0]),
+        rank2: this.props.articles.get(this.state.ranks[1]),
+        rank3: this.props.articles.get(this.state.ranks[2])
+      }
     })
     .then(response => {
       this.setState({
