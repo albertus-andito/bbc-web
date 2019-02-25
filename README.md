@@ -23,6 +23,8 @@ To get a development env running:
 ```
 npm start
 ```
+Open http://localhost:3000/ in your browser
+
 
 ### Build
 
